@@ -30,7 +30,7 @@ const Product = () => {
                 }
 
                 // If not local, fetch from database
-                const response = await axios.get(`http://localhost:5000/api/products/${productId}`);
+                const response = await axios.get(`https://backend-crickart.onrender.com/api/products/${productId}`);
                 const dbProduct = response.data;
                 
                 // Transform database product to match local product structure
@@ -38,7 +38,7 @@ const Product = () => {
                     id: dbProduct._id,
                     name: dbProduct.name,
                     category: dbProduct.category,
-                    image: `http://localhost:5000/${dbProduct.image}`,
+                    image: `https://backend-crickart.onrender.com/${dbProduct.image}`,
                     new_price: dbProduct.new_price,
                     old_price: dbProduct.old_price
                 };
