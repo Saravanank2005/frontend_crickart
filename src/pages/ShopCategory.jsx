@@ -16,13 +16,13 @@ const ShopCategory = (props) => {
 
     const fetchProducts = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/products');
+            const response = await axios.get('https://backend-crickart.onrender.com/api/products');
             // Transform database products to match local product structure
             const transformedDbProducts = response.data.map(product => ({
                 id: product._id,
                 name: product.name,
                 category: product.category,
-                image: `http://localhost:5000/${product.image}`,
+                image: `https://backend-crickart.onrender.com/${product.image}`,
                 new_price: product.new_price,
                 old_price: product.old_price
             }));

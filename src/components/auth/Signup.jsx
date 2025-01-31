@@ -36,7 +36,7 @@ const Signup = () => {
 
     try {
       const { confirmPassword, ...signupData } = formData;
-      await axios.post('http://localhost:5000/api/users/signup', signupData);
+      await axios.post('https://backend-crickart.onrender.com/api/users/signup', signupData);
       navigate('/login');
     } catch (error) {
       setError(error.response?.data?.message || 'Signup failed');
