@@ -1,0 +1,22 @@
+/* Basic reset to avoid overflow issues */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+  text-align: center;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.App-logo {
+  height: 40vmin;
+  max-width: 100%; /* Ensure it doesn't overflow */
+  pointer-events: none;
+}

@@ -1,0 +1,170 @@
+/* Main Container */
+.loginsignup {
+    width: 100%;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Add a gradient for a soft background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    box-sizing: border-box; /* Ensure padding and borders are included in the width and height calculations */
+}
+
+/* Inner Container */
+.loginsignup-container {
+    width: 100%;
+    max-width: 580px; /* Max width for better responsiveness */
+    height: auto;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside container */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width and height calculations */
+}
+
+/* Heading */
+.loginsignup-container h1 {
+    margin: 20px 0;
+    font-size: 32px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Input Fields */
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Reduced gap for a more compact look */
+    margin-top: 30px;
+}
+
+.loginsignup-fields input {
+    height: 55px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #333;
+    font-size: 18px;
+    border-radius: 5px; /* Rounded corners for input fields */
+    transition: border 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus Effect for Inputs */
+.loginsignup-fields input:focus {
+    border-color: #000; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on focus */
+}
+
+/* Button Styles */
+.loginsignup-container button {
+    width: 100%; /* Full width button */
+    max-width: 470px;
+    height: 55px;
+    color: white;
+    background: #000000;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Button Hover Effect */
+.loginsignup-container button:hover {
+    background-color: #333; /* Darken button on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Additional Text (Already have an account) */
+.loginsignup-login {
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.loginsignup-login span {
+    color: #ff0000;
+    font-weight: 600;
+    cursor: pointer; /* Indicate that it’s clickable */
+}
+
+/* Checkbox and Agreement Text */
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 15px; /* Reduced gap for better alignment */
+    color: #5c5c5c;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type="checkbox" i] {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    accent-color: #000; /* Custom checkbox color */
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .loginsignup-container {
+        padding: 30px 40px;
+    }
+
+    .loginsignup-fields input,
+    .loginsignup-container button {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .loginsignup-container h1 {
+        font-size: 28px;
+    }
+
+    .loginsignup-login,
+    .loginsignup-agree {
+        font-size: 14px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .loginsignup-container {
+        padding: 20px 20px;
+    }
+
+    .loginsignup-fields input,
+    .loginsignup-container button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .loginsignup-container h1 {
+        font-size: 24px;
+    }
+
+    .loginsignup-login,
+    .loginsignup-agree {
+        font-size: 12px;
+    }
+}
+.back-icon {
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjust as needed */
+    display: inline-block;
+}
+
+.back-icon svg {
+    color: #000; /* Set the color of the icon */
+    font-size: 24px; /* Adjust the size as needed */
+}
+

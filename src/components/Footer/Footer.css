@@ -1,0 +1,103 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px; /* Further reduced padding */
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Further reduced margin */
+}
+
+.footer-logo {
+    margin-bottom: 5px; /* Further reduced margin */
+    transition: transform 0.3s ease;
+}
+
+.footer-logo img {
+    width: 100px; /* Further reduced logo size */
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.footer-logo:hover img {
+    transform: scale(1.1);
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px; /* Further reduced gap */
+}
+
+.footer-icon {
+    display: inline-block;
+    width: 30px; /* Further reduced icon size */
+    height: 30px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-icon img {
+    width: 18px; /* Further reduced icon size */
+    height: 18px;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+    background-color: #e9ecef;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Further reduced gap */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    margin-bottom: 10px; /* Further reduced margin */
+    font-size: 12px; /* Further reduced font size */
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #252525;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #006aff;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: 12px; /* Further reduced font size */
+    font-weight: 400;
+}
+
+.footer-copyright hr {
+    width: 100%; /* Further reduced width */
+    border: none;
+    border-radius: 50px;
+    height: 3px; /* Further reduced height */
+    background-color: #006aff;
+    margin: 10px 0; /* Further reduced margin */
+}
